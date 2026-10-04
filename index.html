@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royalty 2026</title>
+<meta name="description" content="Royalty 2026. Two lives, one union, a legacy beginning. You are invited.">
+<meta name="theme-color" content="#0d3434">
+<meta property="og:title" content="Royalty 2026">
+<meta property="og:description" content="Two lives. One union. A legacy beginning. You are invited.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="favicon.png">
+<link rel="preload" href="fonts/Amador-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" as="image" href="img/4070-800.webp" imagesrcset="img/4070-480.webp 480w, img/4070-800.webp 800w, img/4070-1200.webp 1200w" imagesizes="(max-width:860px) 78vw, 460px">
+<link rel="preload" as="image" href="img/logo-word-gold.webp">
+<link rel="stylesheet" href="style.css?v=34">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- ornamental divider: crown flanked by flourished rules -->
+    <symbol id="crown" viewBox="0 0 208 123"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M103.933 0L94.2602 20.0219L96.3412 29.8892H91.9298C86.39 29.8892 81.8981 34.3778 81.8981 39.9175C81.8981 45.4561 86.39 49.9447 91.9298 49.9447C92.0695 49.9447 92.2104 49.9424 92.3502 49.9368H98.2556C91.7777 70.2495 74.4362 70.2875 59.7448 59.6185L63.5379 47.829L49.1351 40.4867L44.1858 55.8735L55.0673 61.4244C54.4366 73.8569 37.6218 81.7952 30.8028 73.4845C27.8138 69.8458 25.0294 66.5683 22.2114 63.6542C24.4904 62.839 26.1196 60.6595 26.1196 58.101C26.1196 54.8459 23.4773 52.2035 20.2221 52.2035C17.4287 52.2035 15.0894 54.147 14.48 56.7558C10.3 53.646 5.67167 51.2127 0 49.4526C18.7762 63.6173 32.3683 95.1983 41.1453 122.671C60.6953 114.14 81.973 109.657 103.933 109.657C125.893 109.657 147.17 114.14 166.717 122.671C175.494 95.1983 189.088 63.6173 207.862 49.4526C202.191 51.2127 197.565 53.646 193.386 56.7558C192.775 54.147 190.437 52.2035 187.642 52.2035C184.385 52.2035 181.746 54.8459 181.746 58.101C181.746 60.6595 183.374 62.839 185.653 63.6542C182.836 66.5683 180.049 69.8458 177.063 73.4845C170.244 81.7952 153.426 73.8569 152.798 61.4244L163.68 55.8735L158.727 40.4867L144.328 47.829L148.121 59.6185C133.426 70.2875 116.088 70.2495 109.609 49.9368H115.515C115.652 49.9424 115.795 49.9447 115.936 49.9447C121.475 49.9447 125.964 45.4561 125.964 39.9175C125.964 34.3778 121.475 29.8892 115.936 29.8892H111.521L113.602 20.0219L103.933 0ZM103.933 73.2642L112.074 84.6087L103.933 95.9543L95.791 84.6087L103.933 73.2642ZM67.2336 82.4214L72.0879 89.189L67.2336 95.9543L62.3783 89.189L67.2336 82.4214ZM140.632 82.4214L145.487 89.189L140.632 95.9543L135.777 89.189L140.632 82.4214Z"/></symbol>
+    <symbol id="corner" viewBox="0 0 60 60"><path d="M2 58V10C2 5 5 2 10 2h48M10 58V18c0-5 3-8 8-8h40M16 24c0-5 5-8 9-6 4 2 3 8-2 8-3 0-5-3-3-6" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo" aria-label="Royalty 2026 home"><img src="img/logo-icon-gold.webp" alt="" width="34" height="42"></a>
+  <nav class="nav__links" id="navLinks" aria-label="Main">
+    <a href="#story">Our Story</a>
+    <a href="#wedding">The Wedding</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#party">Wedding Party</a>
+    <a href="#info">Guest Info</a>
+    <a href="#support">Gifts</a>
+    <a href="#rsvp" class="btn btn--small">RSVP</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero pattern">
+  <canvas class="hero__sparkle sparkle" aria-hidden="true"></canvas>
+  <img class="hero__seal" src="img/emblem-gold.webp" alt="" aria-hidden="true">
+  <div class="hero__grid">
+    <div class="hero__text">
+      <img class="hero__logo" src="img/logo-word-gold.webp" alt="Royalty 2026" width="460">
+      <p class="eyebrow">The wedding of</p>
+      <h1 class="hero__names"><span data-bind="bride">Bride</span><i>&amp;</i><span data-bind="groom">Groom</span></h1>
+      <p class="hero__tag">Two lives. One union. A legacy beginning.</p>
+      <p class="hero__date" data-bind="dateLong"></p>
+      <div class="countdown" id="countdown">
+        <div><b id="cdD">00</b><span>Days</span></div>
+        <div><b id="cdH">00</b><span>Hours</span></div>
+        <div><b id="cdM">00</b><span>Minutes</span></div>
+        <div><b id="cdS">00</b><span>Seconds</span></div>
+      </div>
+      <p class="hero__until" id="cdNote">Until we become one</p>
+      <div class="hero__cta">
+        <a href="#wedding" class="btn btn--gold">Explore the wedding</a>
+        <a href="#rsvp" class="btn btn--ghost">RSVP</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="arch"><img src="img/4070-800.webp" srcset="img/4070-480.webp 480w, img/4070-800.webp 800w, img/4070-1200.webp 1200w" sizes="(max-width:860px) 78vw, 460px" width="800" height="1000" fetchpriority="high" decoding="async" alt="The couple, smiling, in black"></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee__track">
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  
+</div></div>
+
+<!-- STORY -->
+<section class="section section--ivory" id="story">
+  <div class="wrap">
+    <header class="head">
+      <p class="eyebrow">The Royal Couple</p>
+      <h2 class="title">Our Story</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+
+    <div class="couple">
+      <figure class="person reveal">
+        <div class="arch arch--frame"><img src="img/4081-800.webp" srcset="img/4081-480.webp 480w, img/4081-800.webp 800w, img/4081-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="800" height="1077" loading="lazy" decoding="async" alt="The bride in traditional attire"></div>
+        <figcaption>
+          <small>The Bride</small>
+          <h3 data-bind="bride">Bride</h3>
+          <p data-edit>Add a short bio for the bride here: who she is, what she loves, and what she says about him.</p>
+        </figcaption>
+      </figure>
+      <figure class="person reveal">
+        <div class="arch arch--frame"><img src="img/4078-800.webp" srcset="img/4078-480.webp 480w, img/4078-800.webp 800w, img/4078-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="800" height="1000" loading="lazy" decoding="async" alt="The groom in traditional attire with a cane"></div>
+        <figcaption>
+          <small>The Groom</small>
+          <h3 data-bind="groom">Groom</h3>
+          <p data-edit>Add a short bio for the groom here: who he is, what he loves, and what he says about her.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <ol class="timeline">
+      <li class="reveal"><time data-edit>Year</time><h3>How we met</h3><p data-edit>Tell the story of the first meeting in two or three sentences.</p></li>
+      <li class="reveal"><time data-edit>Year</time><h3>The first date</h3><p data-edit>Where you went, what you talked about, what you remember.</p></li>
+      <li class="reveal"><time data-edit>Year</time><h3>When we knew</h3><p data-edit>The moment it became clear this was forever.</p></li>
+      <li class="reveal"><time data-edit>Year</time><h3>The proposal</h3><p data-edit>How the question was asked, and the answer.</p></li>
+      <li class="reveal"><time>2026</time><h3>Royalty 2026</h3><p>Two stories become one. Join us as we begin our legacy.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- QUOTE BAND -->
+<section class="band" data-bg="img/4082-1800.webp">
+  <div class="band__card frame">
+    <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+    <p>“Our greatest adventure begins here.”</p>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section section--teal pattern" id="wedding">
+  <div class="wrap">
+    <header class="head">
+      <p class="eyebrow">You are invited to</p>
+      <h2 class="title">The Royal Celebration</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <div class="events">
+      <article class="event frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <h3>Traditional Wedding</h3>
+        <dl>
+          <dt>Date</dt><dd data-edit>To be announced</dd>
+          <dt>Time</dt><dd data-edit>00:00</dd>
+          <dt>Venue</dt><dd data-edit>Venue name, City</dd>
+          <dt>Attire</dt><dd data-edit>Traditional, in blue and white if you have it</dd>
+        </dl>
+        <a class="btn btn--small btn--ghost" href="#" data-map="traditional">View location</a>
+      </article>
+      <article class="event frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <h3>Court Wedding</h3>
+        <dl>
+          <dt>Date</dt><dd data-edit>To be announced</dd>
+          <dt>Time</dt><dd data-edit>00:00</dd>
+          <dt>Venue</dt><dd data-edit>Venue name, City</dd>
+          <dt>Attire</dt><dd data-edit>Smart formal</dd>
+        </dl>
+        <a class="btn btn--small btn--ghost" href="#" data-map="court">View location</a>
+      </article>
+      <article class="event frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <h3>Church Ceremony</h3>
+        <dl>
+          <dt>Date</dt><dd data-edit>To be announced</dd>
+          <dt>Time</dt><dd data-edit>00:00</dd>
+          <dt>Venue</dt><dd data-edit>Church name, City</dd>
+          <dt>Attire</dt><dd data-edit>See the royal dress code</dd>
+        </dl>
+        <a class="btn btn--small btn--ghost" href="#" data-map="church">Get directions</a>
+      </article>
+      <article class="event frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <h3>Reception</h3>
+        <dl>
+          <dt>Date</dt><dd data-edit>To be announced</dd>
+          <dt>Time</dt><dd data-edit>00:00</dd>
+          <dt>Venue</dt><dd data-edit>Venue name, City</dd>
+          <dt>Attire</dt><dd data-edit>See the royal dress code</dd>
+        </dl>
+        <a class="btn btn--small btn--ghost" href="#" data-map="reception">View location</a>
+      </article>
+    </div>
+    <p class="center"><button class="btn btn--gold" id="addCal" type="button">Add to calendar</button></p>
+
+    <header class="head head--sub">
+      <h2 class="title title--sub">Wedding Day Schedule</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <ul class="schedule">
+      <li class="reveal"><b data-edit>08:00</b><span data-edit>Bridal preparation</span></li>
+      <li class="reveal"><b data-edit>10:00</b><span data-edit>Traditional ceremony</span></li>
+      <li class="reveal"><b data-edit>14:00</b><span data-edit>Church ceremony</span></li>
+      <li class="reveal"><b data-edit>16:00</b><span data-edit>Photographs</span></li>
+      <li class="reveal"><b data-edit>18:00</b><span data-edit>Reception opens</span></li>
+      <li class="reveal"><b data-edit>19:00</b><span data-edit>Dinner</span></li>
+      <li class="reveal"><b data-edit>20:00</b><span data-edit>First dance</span></li>
+      <li class="reveal"><b data-edit>21:00</b><span data-edit>Celebration</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- DRESS CODE -->
+<section class="section section--ivory" id="dress">
+  <div class="wrap">
+    <header class="head">
+      <p class="eyebrow">Dress with us</p>
+      <h2 class="title">The Royal Dress Code</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <div class="dress">
+      <div class="reveal">
+        <h3>Ladies</h3>
+        <div class="swatches">
+          <span style="--c:#cfb680"><i></i>Gold</span>
+          <span style="--c:#e9d9b8"><i></i>Champagne</span>
+          <span style="--c:#1a1a1a"><i></i>Black</span>
+          <span style="--c:#f4ebdd"><i></i>Ivory</span>
+        </div>
+        <p data-edit>Floor-length or midi. Let the gold shine.</p>
+      </div>
+      <div class="reveal">
+        <h3>Gentlemen</h3>
+        <div class="swatches">
+          <span style="--c:#1a1a1a"><i></i>Black tuxedo</span>
+          <span style="--c:#2b2b2b"><i></i>Black suit</span>
+          <span style="--c:#cfb680"><i></i>Gold accents</span>
+        </div>
+        <p data-edit>Sharp tailoring, with a touch of gold in the tie, pocket square or cufflinks.</p>
+      </div>
+    </div>
+    <p class="note">Palette and styles are a guide: confirm with the couple, then edit this section.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section--ink pattern" id="gallery">
+  <div class="wrap wrap--wide">
+    <header class="head">
+      <p class="eyebrow">Pre-wedding</p>
+      <h2 class="title">Our Gallery</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <div class="filters" role="tablist" aria-label="Gallery filters">
+      <button class="on" data-f="all" role="tab">All</button>
+      <button data-f="traditional" role="tab">Traditional</button>
+      <button data-f="formal" role="tab">Black &amp; Formal</button>
+      <button data-f="royal" role="tab">Burgundy &amp; Gold</button>
+      <button data-f="casual" role="tab">Playful</button>
+    </div>
+    <div class="dlall">
+      <a class="btn btn--gold" href="downloads/Royalty-2026-Photos-HD.zip" download="Royalty-2026-Photos-HD.zip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Download all photos in HD (ZIP)</a>
+      <p>19 full-resolution photos · about 154 MB · or tap the arrow on any photo to save it in HD on its own</p>
+    </div>
+    <div class="masonry" id="masonry">
+      <div class="gi"><button class="g" data-c="traditional" data-i="4067" style="background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwBACdASoUABoAPwFqqk6rJiOiMAgBYCAJZACuHB6VDqB7oZOqwp5feJvIVlIAAP6oZdUdCLb9dNpWvZpmY+Q3I+8dH0tCDs161Ttew08gQJUwy+ncCe7t2mKZpPVAJBtMCoxIyY4AAA==)"><img src="img/4067-800.webp" srcset="img/4067-480.webp 480w, img/4067-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1046" loading="lazy" decoding="async" alt="Couple in traditional attire"></button><a class="dl" href="downloads/Royalty-2026-4067.jpg" download="Royalty-2026-4067.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="formal" data-i="4068" style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwBACdASoUABkAPwFysFKrJqSiqAqpYCAJZQAAIZ4sQbKEgxAdcU1JRGn0wAD+6iJ+HC3xeSWIsEYo99RKoVI+wj/bJZIUkaWTH645pCiGl3ahHr1p1j4OkqcMsY2LSWzQHD08cImF0LmrF//2A792fFAAAA==)"><img src="img/4068-800.webp" srcset="img/4068-480.webp 480w, img/4068-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Couple in black, laughing"></button><a class="dl" href="downloads/Royalty-2026-4068.jpg" download="Royalty-2026-4068.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="royal" data-i="4072" style="background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQBACdASoUABsAPwF0slIrJqSiqAqpYCAJYwCw7A8/c4TmtZ0KvP+Ygl6XY8nh8AD+y9YKqjC/yrHZZAcQmW3YxH1W2ydow6ZSs4wrvFN9Ghgp38KIoQcu3oJbi3+FVNKl1CCgXzSJepiAAAA=)"><img src="img/4072-800.webp" srcset="img/4072-480.webp 480w, img/4072-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1070" loading="lazy" decoding="async" alt="Couple on a burgundy sofa"></button><a class="dl" href="downloads/Royalty-2026-4072.jpg" download="Royalty-2026-4072.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="casual" data-i="4075" style="background-image:url(data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADwBACdASoUABoAPv1or06rJiSiMBgMAWAfiWMAyrQRRUF+zYmuIWAQXUlUNayXmAAA/uL1rKLOrlmoCgSQfIjQ7Dos7dkkWVqEyP2zq9mNAodeNc3KBVf9sGBGajuHxtP5BqK4T2oXT8hMY9EAZjgFzMWAAA==)"><img src="img/4075-800.webp" srcset="img/4075-480.webp 480w, img/4075-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1045" loading="lazy" decoding="async" alt="Couple in matching sweaters"></button><a class="dl" href="downloads/Royalty-2026-4075.jpg" download="Royalty-2026-4075.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="traditional" data-i="4079" style="background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBQCdASoUAB0APwFuqE6rJqOiMBgMAWAgCWMArDOR/kAd+Y/dFCQ4jC7/URFe91MQAP2KpvxppZxqvU4PRB/KZMh0YvcSgkbDix6PoDtjJ6F5Ip+IPHEYNl+SV6BcvEau90zrkxtZKna8IPmZeAAA)"><img src="img/4079-800.webp" srcset="img/4079-480.webp 480w, img/4079-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1168" loading="lazy" decoding="async" alt="Groom seated in traditional attire"></button><a class="dl" href="downloads/Royalty-2026-4079.jpg" download="Royalty-2026-4079.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="formal" data-i="4071" style="background-image:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwBACdASoUABkAPwFyslIrJqSiqAqpYCAJZwDKAAxdz2+zXjh8D4ratgdf0u9yQlgA/ua9HqW44JFEFdJ0p/39XuUvUDjDNd/k8tTp1LaOXfcVHFjNYpf4cqUfKTsEIshjca+LsGGekfwA)"><img src="img/4071-800.webp" srcset="img/4071-480.webp 480w, img/4071-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Close portrait in black"></button><a class="dl" href="downloads/Royalty-2026-4071.jpg" download="Royalty-2026-4071.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="royal" data-i="4074" style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADwBACdASoUABkAPv1mrk6rJSSiMBgMAWAfiUAVhlmAMtOWlaGFIk/qZHF0mALZU3AA/nGeXKP1ZqdkUyxWBkqXlOJ/9/tfi9cR1ZOHowSxBHlVKaXd/ivCp2jTWFi3L2NXjmBeI7etr3cr/b79V46L9wvA+YIhw7saIAAA)"><img src="img/4074-800.webp" srcset="img/4074-480.webp 480w, img/4074-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Couple laughing in burgundy and gold"></button><a class="dl" href="downloads/Royalty-2026-4074.jpg" download="Royalty-2026-4074.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="traditional" data-i="4080" style="background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAACwBACdASoUABkAPwFurlCrJiQiqA1RYCAJZACdM09wtCT4F0kSulHSdKGsoHQAAP5Bl53fnEnQQFnAe8BPCU2DPwh72Ro+bs8851nPQQ5sOMScNmWhMIOFncTCnOLrQjLq70ExwKnWzD/fIv4skAAA)"><img src="img/4080-800.webp" srcset="img/4080-480.webp 480w, img/4080-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Traditional couple portrait"></button><a class="dl" href="downloads/Royalty-2026-4080.jpg" download="Royalty-2026-4080.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="casual" data-i="4077" style="background-image:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwBACdASoUABkAPwFwr06rJqSiMAgBYCAJYwDM0CG6x1SxX1WlOfh9PYWONjgAAP7LhEAs9USe8+B4KkTBgz2pBlI6xfoBGQ95b8zgo4qAg8fv5XewzTa+Q7h5BkRcQM3TFmflbTdUAAAA)"><img src="img/4077-800.webp" srcset="img/4077-480.webp 480w, img/4077-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Couple seated together"></button><a class="dl" href="downloads/Royalty-2026-4077.jpg" download="Royalty-2026-4077.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="formal" data-i="4069" style="background-image:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwBQCdASoUABoAPwFsrlCrJaQisBgIAWAgCWkAACnVte20sYp7DnJoIqtqV0bErdSCoAD+3ca4kanWnCYrNiDyMAecrarANBMNwug98MnbD0pQLH/14VVlpYyqQ9n+1RPXZwTSaHatsAAA)"><img src="img/4069-800.webp" srcset="img/4069-480.webp 480w, img/4069-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1040" loading="lazy" decoding="async" alt="Couple standing in black"></button><a class="dl" href="downloads/Royalty-2026-4069.jpg" download="Royalty-2026-4069.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="royal" data-i="4073" style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoUABkAPvVmqU6qpaOiN/VYAVAeiWUAqPQNGTiG1lNdoTkBAgD+2UFeXfupmhDgdKcqbtWW5otSuu/Y9ypXlQUDLqsE3O77R/kIf11XPTw6k9DmliBBwxfLiLQAAA==)"><img src="img/4073-800.webp" srcset="img/4073-480.webp 480w, img/4073-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Couple standing, burgundy and ivory"></button><a class="dl" href="downloads/Royalty-2026-4073.jpg" download="Royalty-2026-4073.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="traditional" data-i="4082" style="background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAQBQCdASoUAB4APulmpk6pJiOiN/qoASAdCWQAwoAh0aUORLIRgAeFh/37TxWbiz0AAP6DSbPLX0kleJNK05XSqGOYAM9gC3cTIGgjjhuOcceZkg3bPB46orAMa55SVZMlSwNaHKu7kZAKxowG12AOOO1ZBTvjZtkVAAAA)"><img src="img/4082-800.webp" srcset="img/4082-480.webp 480w, img/4082-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1180" loading="lazy" decoding="async" alt="Traditional couple, close"></button><a class="dl" href="downloads/Royalty-2026-4082.jpg" download="Royalty-2026-4082.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="casual" data-i="4084" style="background-image:url(data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAACwBACdASoUABkAPvVoq06qpiQiMAwBUB6JYwDOOCG8G/Np9QPfMu8lmI53G5gAAP7ZDu0n4YhQtWkdYDYLK0PaZcSvkXLHf9mG00eNInTiS1ugLPN1X5/eRqa9qbKl6AA=)"><img src="img/4084-800.webp" srcset="img/4084-480.webp 480w, img/4084-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Playful pose with sunglasses"></button><a class="dl" href="downloads/Royalty-2026-4084.jpg" download="Royalty-2026-4084.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="traditional" data-i="4081" style="background-image:url(data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAwBQCdASoUABsAPu1eqE6ppSQiN/qoATAdiUAWnQPSM9AfyuW/Z6ayEQTghTw6ubdsAAD+q2faQvIridEbZGTkdyeMEvcWkXQL2wrNLKRnhSzuXrHxwz2nsJzXd0xcDtHauqgAAAA=)"><img src="img/4081-800.webp" srcset="img/4081-480.webp 480w, img/4081-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1077" loading="lazy" decoding="async" alt="Bride in traditional attire"></button><a class="dl" href="downloads/Royalty-2026-4081.jpg" download="Royalty-2026-4081.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="formal" data-i="4070" style="background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBQCdASoUABkAPwF0r1KrJqQiqAqpYCAJZwAAIcv1XSTZ/+nVhafJiXTNpp9VuM5AAP7ClSB2tpk1YqZoFVoGDrX3zaIbRqqdyeLejlkE9fWXL7AdlSaaXYzm3im9eFyCl2/LOdsnLwVd8mchAAAA)"><img src="img/4070-800.webp" srcset="img/4070-480.webp 480w, img/4070-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Couple smiling in black"></button><a class="dl" href="downloads/Royalty-2026-4070.jpg" download="Royalty-2026-4070.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="casual" data-i="4076" style="background-image:url(data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAABQBQCdASoUAB4APu1gp06ppaOiN/qoATAdiWMAgQQIpD1vJ0TKdX2n0UAoEedmS2FwDAAA/tk+FJ7GAo4QiLPdoHwcuzBBTNdm4DysqLMvcw6ntGQaIYyC5Y3AcJRlGP+rt4zsVVTEePFW2ck/Ii2aVVPDQAAA)"><img src="img/4076-800.webp" srcset="img/4076-480.webp 480w, img/4076-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1200" loading="lazy" decoding="async" alt="Matching sweaters, close"></button><a class="dl" href="downloads/Royalty-2026-4076.jpg" download="Royalty-2026-4076.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="traditional" data-i="4078" style="background-image:url(data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBQCdASoUABkAPvlmpk6qpaMiMAwBUB8JZACxDKnDMfasuvawVXcsNFPgJQf6XtlyAAD+27cZfLv/3gfSRPpOQm+JUhH+jNHgUGDlI83w1VUPUeg2GW3l1DczqOOx0aewLCMj3xnaXJDnVFDuEAAA)"><img src="img/4078-800.webp" srcset="img/4078-480.webp 480w, img/4078-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Groom with cane"></button><a class="dl" href="downloads/Royalty-2026-4078.jpg" download="Royalty-2026-4078.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="casual" data-i="4083" style="background-image:url(data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBQCdASoUABwAPulkp06pJaOiN/qoASAdCWUAgeEHuK6o0IBmhlMmnnbev38FZ44lAMAA/sv673sYh0AZiqjng8yWSOAF5BTgUfJq/6kzgcROi9D9yExTL3Ec6Xa0STqp1Dwuf+PL+kZkIddww2OaAAA=)"><img src="img/4083-800.webp" srcset="img/4083-480.webp 480w, img/4083-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1134" loading="lazy" decoding="async" alt="Sunglasses, sweaters"></button><a class="dl" href="downloads/Royalty-2026-4083.jpg" download="Royalty-2026-4083.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+      <div class="gi"><button class="g" data-c="casual" data-i="4085" style="background-image:url(data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQBACdASoUABkAPwFuqU8rJqOiMBgMAWAgCUAZ3YG5ze8FyBuCQ1u3JGVF+aAA/sv1js9oeXgZOjcPwNN+PKDDgpZXAs4Ie6hT99w6RxfxCg+tIAZ9a9rVJ2TGDse9IYAAAA==)"><img src="img/4085-800.webp" srcset="img/4085-480.webp 480w, img/4085-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1000" loading="lazy" decoding="async" alt="Playful pose"></button><a class="dl" href="downloads/Royalty-2026-4085.jpg" download="Royalty-2026-4085.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- WEDDING PARTY -->
+<section class="section section--ivory" id="party">
+  <div class="wrap wrap--wide">
+    <header class="head">
+      <p class="eyebrow">Standing with us</p>
+      <h2 class="title">The Royal Party</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <div class="party">
+      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Maid of Honor</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Best Man</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Groomsman</small></div>
+    </div>
+    <p class="note">Swap each monogram for a photo by replacing the <code>.mono</code> block with an <code>&lt;img&gt;</code>.</p>
+  </div>
+</section>
+
+<!-- GUEST INFO -->
+<section class="section section--teal pattern" id="info">
+  <div class="wrap wrap--narrow">
+    <header class="head">
+      <p class="eyebrow">Everything you need</p>
+      <h2 class="title">Guest Information</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+
+    <details class="acc" open>
+      <summary>Travel &amp; accommodation</summary>
+      <div>
+        <p data-edit><b>Getting there:</b> Add directions, nearest airport or motor park, and the best arrival time.</p>
+        <p data-edit><b>Hotels nearby:</b> List two or three hotels with contact numbers and the wedding code if any.</p>
+        <p data-edit><b>Transport &amp; parking:</b> Shuttle times, taxi advice, parking availability.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary>Gifts &amp; registry</summary>
+      <div>
+        <p><em>Your presence is our greatest gift.</em></p>
+        <p>Account details for Mobile Money, Orange Money and bank transfer are in the <a href="#support">gifts section</a> just below.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary>What time should I arrive?</summary>
+      <div><p data-edit>Please arrive 30 minutes before each ceremony so we can begin on time.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Can I bring a guest?</summary>
+      <div><p data-edit>Your invitation lists the seats reserved for you. Please indicate your party size on the RSVP.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Are children invited?</summary>
+      <div><p data-edit>Update this answer to match the couple’s decision.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Is photography allowed?</summary>
+      <div><p data-edit>Our photographers will capture the day. We ask guests to keep phones away during the ceremonies.</p></div>
+    </details>
+    <details class="acc">
+      <summary>Is the invitation transferable?</summary>
+      <div><p data-edit>Invitations are personal. Please contact the couple if your plans change.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- GIFTS / FINANCIAL SUPPORT -->
+<section class="section section--ink pattern" id="support">
+  <div class="wrap">
+    <header class="head">
+      <p class="eyebrow">With gratitude</p>
+      <h2 class="title">Your presence is our greatest gift</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <p class="support__lede" data-edit>For those who wish to bless us further, you can send a gift to any of the accounts below. Thank you for your love and your generosity.</p>
+    <div class="accts">
+      <article class="acct frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <p class="acct__kind">MTN Mobile Money</p>
+        <dl>
+          <div><dt>Account name</dt><dd data-edit>Full name on the account</dd></div>
+          <div><dt>Number</dt><dd data-copy data-edit>+237 6XX XXX XXX</dd></div>
+        </dl>
+      </article>
+      <article class="acct frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <p class="acct__kind">Orange Money</p>
+        <dl>
+          <div><dt>Account name</dt><dd data-edit>Full name on the account</dd></div>
+          <div><dt>Number</dt><dd data-copy data-edit>+237 6XX XXX XXX</dd></div>
+        </dl>
+      </article>
+      <article class="acct frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <p class="acct__kind">Bank transfer</p>
+        <dl>
+          <div><dt>Bank</dt><dd data-edit>Bank name</dd></div>
+          <div><dt>Account name</dt><dd data-edit>Full name on the account</dd></div>
+          <div><dt>Account number</dt><dd data-copy data-edit>0000 0000 0000</dd></div>
+          <div><dt>IBAN / SWIFT (international guests)</dt><dd data-copy data-edit>Optional</dd></div>
+        </dl>
+      </article>
+    </div>
+    <p class="support__note" data-edit>Please add your name as the reference so we can thank you personally. Only send gifts to the accounts shown on this page.</p>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="section section--ivory" id="rsvp">
+  <div class="wrap wrap--narrow">
+    <div class="rsvp frame">
+      <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+      <img class="rsvp__icon" src="img/logo-icon-teal.webp" alt="" width="54">
+      <p class="eyebrow">Reply by <span data-bind="rsvpBy">the date on your invitation</span></p>
+      <h2 class="title">Will you join us?</h2>
+      <form class="form" id="rsvpForm" novalidate>
+        <label>Full name<input name="name" required autocomplete="name"></label>
+        <label>Phone or email<input name="contact" required autocomplete="email"></label>
+        <fieldset>
+          <legend>Will you attend?</legend>
+          <label class="radio"><input type="radio" name="attending" value="Yes, with pleasure" checked><span>Yes, with pleasure</span></label>
+          <label class="radio"><input type="radio" name="attending" value="Regretfully, no"><span>Regretfully, no</span></label>
+        </fieldset>
+        <div class="row">
+          <label>Number of guests<input type="number" name="guests" min="1" max="10" value="1"></label>
+          <label>Meal preference
+            <select name="meal"><option>No preference</option><option>Chicken</option><option>Fish</option><option>Beef</option><option>Vegetarian</option></select>
+          </label>
+        </div>
+        <label>A blessing for the couple<textarea name="message" rows="4" placeholder="Leave a message for the happy couple"></textarea></label>
+        <button class="btn" type="submit">Send RSVP</button>
+        <p class="form__status" id="rsvpStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="marquee marquee--rev" aria-hidden="true"><div class="marquee__track">
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  <span>Royalty 2026</span><i>✦</i><span>Two lives</span><i>✦</i><span>One union</span><i>✦</i><span>A legacy beginning</span><i>✦</i>
+  
+</div></div>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="closing__bg" data-bg="img/4067-1800.webp"></div>
+  <canvas class="sparkle" aria-hidden="true"></canvas>
+  <div class="closing__inner">
+    <img class="closing__seal" src="img/emblem-gold.webp" alt="Royalty 2026 emblem" width="190">
+    <p class="closing__lines">Two lives. Two stories.<br>One love. One forever.</p>
+    <p class="hero__date" data-bind="dateLong"></p>
+    <a href="#rsvp" class="btn btn--gold">RSVP now</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <img src="img/logo-icon-gold.webp" alt="" width="26">
+  <p>Royalty 2026 · Brand identity &amp; website by Chimban Rodrick</p>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="lb__x" aria-label="Close">×</button>
+  <a class="lb__dl btn btn--gold btn--small" id="lbDl" href="#" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Download</a>
+  <button class="lb__p" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb__n" aria-label="Next">›</button>
+</div>
+
+<script src="script.js?v=34"></script>
+</body>
+</html>

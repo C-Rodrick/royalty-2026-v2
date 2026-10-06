@@ -512,3 +512,16 @@ code{font-size:.9em}
 @media (max-width:560px){.ch__photos .col:nth-child(2){margin-top:28px}}
 @media (prefers-reduced-motion:reduce){.js .chapter .gi.reveal{clip-path:none!important}}
 .ch__no{margin-bottom:.26em}
+
+
+/* RSVP: photo beside the form */
+.rsvp-split{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(28px,5vw,80px);align-items:center;max-width:1180px}
+.rsvp__photo{margin:0;position:sticky;top:110px}
+.rsvp__photo .arch{aspect-ratio:3/4}
+.rsvp__photo .arch img{object-position:center 22%}
+.rsvp-split .rsvp{margin:0}
+@media (max-width:900px){
+  .rsvp-split{grid-template-columns:1fr;max-width:740px}
+  .rsvp__photo{position:static;width:min(78%,360px);margin:0 auto}
+}
+.rsvp-split{align-items:start}

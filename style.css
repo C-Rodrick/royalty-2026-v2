@@ -427,8 +427,6 @@ code{font-size:.9em}
 
 /* progressive photo loading */
 .g{background-size:cover;background-position:center;background-color:var(--ink-2)}
-.js .g img{opacity:0;transition:opacity .6s,transform .7s,filter .4s}
-.js .g img.ld{opacity:1}
 .band{background-color:var(--ink);background-image:none}
 .band[data-bg]{background-image:var(--img,none)}
 .closing__bg{background-color:var(--ink);opacity:0;transition:opacity 1s}
@@ -525,3 +523,6 @@ code{font-size:.9em}
   .rsvp__photo{position:static;width:min(78%,360px);margin:0 auto}
 }
 .rsvp-split{align-items:start}
+
+/* photos show as soon as they load: no blurred previews, no fade-in gate */
+.g img{opacity:1!important}

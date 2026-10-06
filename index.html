@@ -13,7 +13,7 @@
 <link rel="preload" href="fonts/Amador-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" as="image" href="img/4070-800.webp" imagesrcset="img/4070-480.webp 480w, img/4070-800.webp 800w, img/4070-1200.webp 1200w" imagesizes="(max-width:860px) 78vw, 460px">
 <link rel="preload" as="image" href="img/logo-word-gold.webp">
-<link rel="stylesheet" href="style.css?v=34">
+<link rel="stylesheet" href="style.css?v=35">
 </head>
 <body>
 
@@ -50,7 +50,7 @@
     <div class="hero__text">
       <img class="hero__logo" src="img/logo-word-gold.webp" alt="Royalty 2026" width="460">
       <p class="eyebrow">The wedding of</p>
-      <h1 class="hero__names"><span data-bind="bride">Bride</span><i>&amp;</i><span data-bind="groom">Groom</span></h1>
+      <h1 class="hero__names"><span data-bind="bride">Joyce</span><i>&amp;</i><span data-bind="groom">Nervis</span></h1>
       <p class="hero__tag">Two lives. One union. A legacy beginning.</p>
       <p class="hero__date" data-bind="dateLong"></p>
       <div class="countdown" id="countdown">
@@ -93,7 +93,7 @@
         <div class="arch arch--frame"><img src="img/4081-800.webp" srcset="img/4081-480.webp 480w, img/4081-800.webp 800w, img/4081-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="800" height="1077" loading="lazy" decoding="async" alt="The bride in traditional attire"></div>
         <figcaption>
           <small>The Bride</small>
-          <h3 data-bind="bride">Bride</h3>
+          <h3 data-bind="brideFull">Asobo Joyce</h3>
           <p data-edit>Add a short bio for the bride here: who she is, what she loves, and what she says about him.</p>
         </figcaption>
       </figure>
@@ -101,7 +101,7 @@
         <div class="arch arch--frame"><img src="img/4078-800.webp" srcset="img/4078-480.webp 480w, img/4078-800.webp 800w, img/4078-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="800" height="1000" loading="lazy" decoding="async" alt="The groom in traditional attire with a cane"></div>
         <figcaption>
           <small>The Groom</small>
-          <h3 data-bind="groom">Groom</h3>
+          <h3 data-bind="groomFull">Nzometiah Nervis</h3>
           <p data-edit>Add a short bio for the groom here: who he is, what he loves, and what he says about her.</p>
         </figcaption>
       </figure>
@@ -136,34 +136,34 @@
     <div class="events">
       <article class="event frame reveal">
         <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <h3>Civil Wedding</h3>
+        <dl>
+          <dt>Date</dt><dd>Thursday 3 December 2026</dd>
+          <dt>Time</dt><dd>10:00 am, prompt</dd>
+          <dt>Venue</dt><dd>Buea Council, Buea</dd>
+          <dt>Attire</dt><dd>To be confirmed</dd>
+        </dl>
+        <a class="btn btn--small btn--ghost" href="#" data-map="civil">View location</a>
+      </article>
+      <article class="event frame reveal">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
         <h3>Traditional Wedding</h3>
         <dl>
-          <dt>Date</dt><dd data-edit>To be announced</dd>
-          <dt>Time</dt><dd data-edit>00:00</dd>
-          <dt>Venue</dt><dd data-edit>Venue name, City</dd>
-          <dt>Attire</dt><dd data-edit>Traditional, in blue and white if you have it</dd>
+          <dt>Date</dt><dd>Thursday 3 December 2026</dd>
+          <dt>Arrival</dt><dd>5:00 pm</dd>
+          <dt>Venue</dt><dd>Mini Koket, Bonduma, Buea</dd>
+          <dt>Attire</dt><dd>To be confirmed</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="traditional">View location</a>
       </article>
       <article class="event frame reveal">
         <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
-        <h3>Court Wedding</h3>
+        <h3>Church Wedding</h3>
         <dl>
-          <dt>Date</dt><dd data-edit>To be announced</dd>
-          <dt>Time</dt><dd data-edit>00:00</dd>
-          <dt>Venue</dt><dd data-edit>Venue name, City</dd>
-          <dt>Attire</dt><dd data-edit>Smart formal</dd>
-        </dl>
-        <a class="btn btn--small btn--ghost" href="#" data-map="court">View location</a>
-      </article>
-      <article class="event frame reveal">
-        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
-        <h3>Church Ceremony</h3>
-        <dl>
-          <dt>Date</dt><dd data-edit>To be announced</dd>
-          <dt>Time</dt><dd data-edit>00:00</dd>
-          <dt>Venue</dt><dd data-edit>Church name, City</dd>
-          <dt>Attire</dt><dd data-edit>See the royal dress code</dd>
+          <dt>Date</dt><dd>Saturday 5 December 2026</dd>
+          <dt>Time</dt><dd>11:00 am, prompt</dd>
+          <dt>Venue</dt><dd>LoveWorld Arena, Christ Embassy, Mayor Street, Buea</dd>
+          <dt>Attire</dt><dd>See the royal dress code</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="church">Get directions</a>
       </article>
@@ -171,10 +171,10 @@
         <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
         <h3>Reception</h3>
         <dl>
-          <dt>Date</dt><dd data-edit>To be announced</dd>
-          <dt>Time</dt><dd data-edit>00:00</dd>
-          <dt>Venue</dt><dd data-edit>Venue name, City</dd>
-          <dt>Attire</dt><dd data-edit>See the royal dress code</dd>
+          <dt>Date</dt><dd>Saturday 5 December 2026 (after the church wedding)</dd>
+          <dt>Arrival</dt><dd>5:00 pm</dd>
+          <dt>Venue</dt><dd>Auntie Kate Banquet Hall, Pastorial Center, behind Buea Cathedral (about 500 m from Checkpoint)</dd>
+          <dt>Attire</dt><dd>See the royal dress code</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="reception">View location</a>
       </article>
@@ -182,18 +182,16 @@
     <p class="center"><button class="btn btn--gold" id="addCal" type="button">Add to calendar</button></p>
 
     <header class="head head--sub">
-      <h2 class="title title--sub">Wedding Day Schedule</h2>
+      <h2 class="title title--sub">The Wedding Days</h2>
       <div class="rule"><svg><use href="#crown"/></svg></div>
     </header>
     <ul class="schedule">
-      <li class="reveal"><b data-edit>08:00</b><span data-edit>Bridal preparation</span></li>
-      <li class="reveal"><b data-edit>10:00</b><span data-edit>Traditional ceremony</span></li>
-      <li class="reveal"><b data-edit>14:00</b><span data-edit>Church ceremony</span></li>
-      <li class="reveal"><b data-edit>16:00</b><span data-edit>Photographs</span></li>
-      <li class="reveal"><b data-edit>18:00</b><span data-edit>Reception opens</span></li>
-      <li class="reveal"><b data-edit>19:00</b><span data-edit>Dinner</span></li>
-      <li class="reveal"><b data-edit>20:00</b><span data-edit>First dance</span></li>
-      <li class="reveal"><b data-edit>21:00</b><span data-edit>Celebration</span></li>
+      <li class="sep reveal"><span>Thursday 3 December</span></li>
+      <li class="reveal"><b>10:00</b><span>Civil wedding · Buea Council (10 am prompt)</span></li>
+      <li class="reveal"><b>17:00</b><span>Traditional wedding · Mini Koket, Bonduma (arrival 5 pm)</span></li>
+      <li class="sep reveal"><span>Saturday 5 December</span></li>
+      <li class="reveal"><b>11:00</b><span>Church wedding · LoveWorld Arena, Christ Embassy (11 am prompt)</span></li>
+      <li class="reveal"><b>17:00</b><span>Reception · Auntie Kate Banquet Hall (arrival 5 pm)</span></li>
     </ul>
   </div>
 </section>
@@ -446,6 +444,6 @@
   <button class="lb__n" aria-label="Next">›</button>
 </div>
 
-<script src="script.js?v=34"></script>
+<script src="script.js?v=35"></script>
 </body>
 </html>

@@ -471,3 +471,8 @@ code{font-size:.9em}
 .copy:hover,.copy.done{background:var(--gold);border-color:var(--gold);color:var(--ink)}
 .support__note{max-width:56ch;margin:clamp(24px,3vw,38px) auto 0;text-align:center;font-size:.95rem;opacity:.8}
 .acct.in:hover{transform:translateY(-6px)!important;background:rgba(11,44,44,.8)}
+
+.schedule li.sep{display:block;padding:24px 0 8px}
+.schedule li.sep::after{display:none}
+.schedule li.sep span{font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.event dd{overflow-wrap:anywhere}

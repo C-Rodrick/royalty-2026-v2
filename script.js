@@ -10,6 +10,7 @@ const CONFIG = {
   dateLabel: '3rd to 5th December 2026', // shown under the names and in the footer areas
   rsvpBy: 'November 30th',                           // e.g. 'December 1st'
   whatsapp: '237679999763',                         // couple's number, digits only with country code, e.g. '237674139843'
+  mediaBase: 'https://pub-d11b5bf2bc21485baa1db76585b4858d.r2.dev',                        // where the song, HD photos and ZIP are served from, e.g. 'https://media.royalty2026.com' (empty = this site)
   musicSrc: 'audio/god-made-you-for-me.mp3', // background music, starts only when a guest taps the music button (leave empty to hide the button)
   netlifyForms: true,                   // RSVPs are collected by Netlify Forms (set the email notification in the Netlify dashboard)
   formEndpoint: '',                     // optional: a Formspree URL, e.g. 'https://formspree.io/f/xxxxxxx'
@@ -34,6 +35,8 @@ const tr = s => (LANG === 'fr' && FR[s]) || s;
 
 const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const media = p => (CONFIG.mediaBase ? CONFIG.mediaBase.replace(/\/$/, '') + '/' : '') + p;
+$$('a[href^="downloads/"]').forEach(a => a.setAttribute('href', media(a.getAttribute('href'))));
 const when = new Date(CONFIG.date);
 const dateLong = isNaN(when) ? '' : when.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -117,7 +120,7 @@ const visible = () => tiles.filter(t => !t.parentElement.classList.contains('hid
 function show(i) {
   const v = visible(); cur = (i + v.length) % v.length;
   lbImg.src = `img/${v[cur].dataset.i}-1800.webp`; lbImg.alt = $('img', v[cur]).alt;
-  const dl = $('#lbDl'), id = v[cur].dataset.i; dl.href = `downloads/Royalty-2026-${id}.jpg`; dl.setAttribute('download', `Royalty-2026-${id}.jpg`);
+  const dl = $('#lbDl'), id = v[cur].dataset.i; dl.href = media(`downloads/Royalty-2026-${id}.jpg`); dl.setAttribute('download', `Royalty-2026-${id}.jpg`);
 }
 tiles.forEach(t => t.addEventListener('click', () => { lb.hidden = false; show(visible().indexOf(t)); document.body.style.overflow = 'hidden'; }));
 const close = () => { lb.hidden = true; document.body.style.overflow = ''; };
@@ -285,6 +288,7 @@ $('#rsvpForm').addEventListener('submit', async e => {
     sync();
   });
   au.addEventListener('play', sync); au.addEventListener('pause', sync);
+  au.src = media(CONFIG.musicSrc);
   b._sync = sync; sync();
   /* autoplay: browsers only allow sound after the guest's first tap, click or key press,
      so try straight away and, if blocked, start on that first interaction */

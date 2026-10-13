@@ -569,3 +569,19 @@ code{font-size:.9em}
 @keyframes emblemSettle{0%{transform:rotateY(180deg) scale(.9)}100%{transform:rotateY(360deg) scale(1)}}
 @keyframes thanksIn{from{opacity:0}to{opacity:1}}
 @media (prefers-reduced-motion:reduce){.thanks__emblem{animation:none}.thanks.done .thanks__emblem{animation:none}.thanks{animation:none}}
+
+/* ---- welcome screen: one tap to enter, which lets the song start with sound ---- */
+.welcome{position:fixed;inset:0;z-index:99;display:grid;place-items:center;padding:24px;text-align:center;color:var(--ivory);background:radial-gradient(ellipse at 50% 35%,#134646 0%,#0b2c2c 55%,#061f1f 100%);transition:opacity .7s ease,visibility .7s}
+.welcome[hidden]{display:none}
+.welcome.out{opacity:0;visibility:hidden}
+.welcome__inner{max-width:560px}
+.welcome__emblem{width:150px;height:150px;margin:0 auto 26px;display:block;animation:welcomeFloat 5s ease-in-out infinite}
+.welcome .eyebrow{color:var(--gold)}
+.welcome__names{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,9vw,4.6rem);line-height:1.05;margin:8px 0 10px;color:var(--gold-hi)}
+.welcome__names i{font-style:normal;color:var(--gold);margin:0 .25em}
+.welcome__date{font-family:var(--body);letter-spacing:.24em;text-transform:uppercase;font-size:.78rem;opacity:.85;margin-bottom:30px}
+.welcome .btn{min-width:200px}
+.welcome__skip{display:block;margin:18px auto 0;background:none;border:0;color:var(--ivory);opacity:.7;font-family:var(--body);font-size:.82rem;letter-spacing:.12em;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.welcome__skip:hover{opacity:1}
+@keyframes welcomeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media (prefers-reduced-motion:reduce){.welcome__emblem{animation:none}.welcome{transition:none}}

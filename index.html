@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Royalty 2026</title>
 <meta name="description" content="Royalty 2026. Two lives, one union, a legacy beginning. You are invited.">
+<meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0d3434">
 <meta property="og:title" content="Royalty 2026">
 <meta property="og:description" content="Two lives. One union. A legacy beginning. You are invited.">
@@ -13,7 +14,7 @@
 <link rel="preload" href="fonts/Amador-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" as="image" href="img/p04-800.webp" imagesrcset="img/p04-480.webp 480w, img/p04-800.webp 800w, img/p04-1200.webp 1200w" imagesizes="(max-width:860px) 78vw, 460px">
 <link rel="preload" as="image" href="img/logo-word-gold.webp">
-<link rel="stylesheet" href="style.css?v=40">
+<link rel="stylesheet" href="style.css?v=41">
 </head>
 <body>
 
@@ -32,11 +33,12 @@
     <a href="#story">The Couple</a>
     <a href="#wedding">The Wedding</a>
     <a href="#chapters">Our Story</a>
-    <a href="#party">Wedding Party</a>
+    <a href="#party">Royal Entourage</a>
     <a href="#info">Guest Info</a>
     <a href="#support">Gifts</a>
     <a href="#rsvp" class="btn btn--small">RSVP</a>
   </nav>
+  <button class="lang" id="langBtn" type="button" aria-label="Language: English / Francais"><span data-l="en">EN</span><i>/</i><span data-l="fr">FR</span></button>
   <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
 </header>
 
@@ -90,28 +92,30 @@
 
     <div class="couple">
       <figure class="person reveal">
-        <div class="arch arch--frame"><img src="img/p07-800.webp" srcset="img/p07-480.webp 480w, img/p07-800.webp 800w, img/p07-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="800" height="1067" loading="lazy" decoding="async" alt="The bride seated in a coral robe"></div>
-        <figcaption>
-          <small>The Bride</small>
-          <h3 data-bind="brideFull">Asobo Joyce</h3>
-          <p data-edit>Add a short bio for the bride here: who she is, what she loves, and what she says about him.</p>
-        </figcaption>
-      </figure>
-      <figure class="person reveal">
         <div class="arch arch--frame"><img src="img/p11-800.webp" srcset="img/p11-480.webp 480w, img/p11-800.webp 800w, img/p11-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="720" height="1080" loading="lazy" decoding="async" alt="The groom seated in white"></div>
         <figcaption>
           <small>The Groom</small>
           <h3 data-bind="groomFull">Nzometiah Nervis</h3>
-          <p data-edit>Add a short bio for the groom here: who he is, what he loves, and what he says about her.</p>
+          <p>Nzometiah Nervis is an innovator and technology entrepreneur with a passion for making frontier technologies &amp; STEM education accessible for children and young people. As CEO of Nervtek, and through regular consultancies for government, national agencies, and international organisations such as GIZ, UNDP, and UNICEF, he turns that passion into reality.</p>
+          <p class="said"><em>“Joicy is my treasure, my Joy--ce, a Gem, and a special gift from God. Beyond our relationship, we are actively building the vision of Nervtek together, where she serves as the Education Director.”</em></p>
+        </figcaption>
+      </figure>
+      <figure class="person reveal">
+        <div class="arch arch--frame"><img src="img/p07-800.webp" srcset="img/p07-480.webp 480w, img/p07-800.webp 800w, img/p07-1200.webp 1200w" sizes="(max-width:760px) 88vw, 440px" width="800" height="1067" loading="lazy" decoding="async" alt="The bride seated in a coral robe"></div>
+        <figcaption>
+          <small>The Bride</small>
+          <h3 data-bind="brideFull">Asobo Joyce</h3>
+          <p>A Computer Engineer, Data Scientist and a STEM Educator at Nervtek. She loves music, children and impacting others through service.</p>
+          <p class="said"><em>“Nervis is my safe space, my surest padi, my perfect fit, and the one specially made for me.”</em></p>
         </figcaption>
       </figure>
     </div>
 
     <ol class="timeline">
-      <li class="reveal"><time data-edit>Year</time><h3>How we met</h3><p data-edit>Tell the story of the first meeting in two or three sentences.</p></li>
-      <li class="reveal"><time data-edit>Year</time><h3>The first date</h3><p data-edit>Where you went, what you talked about, what you remember.</p></li>
-      <li class="reveal"><time data-edit>Year</time><h3>When we knew</h3><p data-edit>The moment it became clear this was forever.</p></li>
-      <li class="reveal"><time data-edit>Year</time><h3>The proposal</h3><p data-edit>How the question was asked, and the answer.</p></li>
+      <li class="reveal"><time>2021</time><h3>How we met</h3><p>Nervis was a speaker at the GICS Meetup, and Joyce threw a question at him during the Q/A. The rest is history.</p></li>
+      <li class="reveal"><time>2024</time><h3>The first date</h3><p>We went out to a restaurant to eat and discuss.</p></li>
+      <li class="reveal"><time>2024</time><h3>When we knew</h3><p>He officially proposed.</p></li>
+      <li class="reveal"><time>2024</time><h3>The proposal</h3><p>He came to see her pastors and presented her to his own before any further step was taken.</p></li>
       <li class="reveal"><time>2026</time><h3>Royalty 2026</h3><p>Two stories become one. Join us as we begin our legacy.</p></li>
     </ol>
   </div>
@@ -139,9 +143,9 @@
         <h3>Civil Wedding</h3>
         <dl>
           <dt>Date</dt><dd>Thursday 3 December 2026</dd>
-          <dt>Time</dt><dd>10:00 am, prompt</dd>
+          <dt>Time</dt><dd>9:00 am, prompt</dd>
           <dt>Venue</dt><dd>Buea Council, Buea</dd>
-          <dt>Attire</dt><dd>To be confirmed</dd>
+          <dt>Attire</dt><dd>Decent formal fits</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="civil">View location</a>
       </article>
@@ -151,8 +155,8 @@
         <dl>
           <dt>Date</dt><dd>Thursday 3 December 2026</dd>
           <dt>Arrival</dt><dd>5:00 pm</dd>
-          <dt>Venue</dt><dd>Mini Koket, Bonduma, Buea</dd>
-          <dt>Attire</dt><dd>To be confirmed</dd>
+          <dt>Venue</dt><dd>Mini Coquette, Bonduma, Buea</dd>
+          <dt>Attire</dt><dd>Any traditional attire (Ndop, Toghu, Ankara)</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="traditional">View location</a>
       </article>
@@ -163,7 +167,7 @@
           <dt>Date</dt><dd>Saturday 5 December 2026</dd>
           <dt>Time</dt><dd>11:00 am, prompt</dd>
           <dt>Venue</dt><dd>LoveWorld Arena, Christ Embassy, Mayor Street, Buea</dd>
-          <dt>Attire</dt><dd>See the royal dress code</dd>
+          <dt>Attire</dt><dd>Ivory, Champagne Gold, Teal or White</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="church">Get directions</a>
       </article>
@@ -173,8 +177,8 @@
         <dl>
           <dt>Date</dt><dd>Saturday 5 December 2026 (after the church wedding)</dd>
           <dt>Arrival</dt><dd>5:00 pm</dd>
-          <dt>Venue</dt><dd>Auntie Kate Banquet Hall, Pastorial Center, behind Buea Cathedral (about 500 m from Checkpoint)</dd>
-          <dt>Attire</dt><dd>See the royal dress code</dd>
+          <dt>Venue</dt><dd>Auntie Kate Banquet Hall, CARITAS (Diocese of Buea) Building, Pastoral Centre, behind Buea Cathedral (about 500 m from Checkpoint)</dd>
+          <dt>Attire</dt><dd>Gold, White, Turquoise Blue or Teal</dd>
         </dl>
         <a class="btn btn--small btn--ghost" href="#" data-map="reception">View location</a>
       </article>
@@ -187,8 +191,8 @@
     </header>
     <ul class="schedule">
       <li class="sep reveal"><span>Thursday 3 December</span></li>
-      <li class="reveal"><b>10:00</b><span>Civil wedding · Buea Council (10 am prompt)</span></li>
-      <li class="reveal"><b>17:00</b><span>Traditional wedding · Mini Koket, Bonduma (arrival 5 pm)</span></li>
+      <li class="reveal"><b>09:00</b><span>Civil wedding · Buea Council (9 am prompt)</span></li>
+      <li class="reveal"><b>17:00</b><span>Traditional wedding · Mini Coquette, Bonduma (arrival 5 pm)</span></li>
       <li class="sep reveal"><span>Saturday 5 December</span></li>
       <li class="reveal"><b>11:00</b><span>Church wedding · LoveWorld Arena, Christ Embassy (11 am prompt)</span></li>
       <li class="reveal"><b>17:00</b><span>Reception · Auntie Kate Banquet Hall (arrival 5 pm)</span></li>
@@ -205,27 +209,12 @@
       <div class="rule"><svg><use href="#crown"/></svg></div>
     </header>
     <div class="dress">
-      <div class="reveal">
-        <h3>Ladies</h3>
-        <div class="swatches">
-          <span style="--c:#cfb680"><i></i>Gold</span>
-          <span style="--c:#e9d9b8"><i></i>Champagne</span>
-          <span style="--c:#1a1a1a"><i></i>Black</span>
-          <span style="--c:#f4ebdd"><i></i>Ivory</span>
-        </div>
-        <p data-edit>Floor-length or midi. Let the gold shine.</p>
-      </div>
-      <div class="reveal">
-        <h3>Gentlemen</h3>
-        <div class="swatches">
-          <span style="--c:#1a1a1a"><i></i>Black tuxedo</span>
-          <span style="--c:#2b2b2b"><i></i>Black suit</span>
-          <span style="--c:#cfb680"><i></i>Gold accents</span>
-        </div>
-        <p data-edit>Sharp tailoring, with a touch of gold in the tie, pocket square or cufflinks.</p>
-      </div>
+      <div class="reveal"><h3>Civil Wedding</h3><p>Decent formal fits.</p></div>
+      <div class="reveal"><h3>Traditional Wedding</h3><p>Any traditional attire: Ndop, Toghu or Ankara.</p></div>
+      <div class="reveal"><h3>Church Wedding</h3><div class="swatches"><span style="--c:#f4ebdd"><i></i>Ivory</span><span style="--c:#e9d9b8"><i></i>Champagne Gold</span><span style="--c:#429390"><i></i>Teal</span><span style="--c:#ffffff"><i></i>White</span></div></div>
+      <div class="reveal"><h3>Reception</h3><div class="swatches"><span style="--c:#cfb680"><i></i>Gold</span><span style="--c:#ffffff"><i></i>White</span><span style="--c:#2fb7c3"><i></i>Turquoise Blue</span><span style="--c:#429390"><i></i>Teal</span></div></div>
     </div>
-    <p class="note">Palette and styles are a guide: confirm with the couple, then edit this section.</p>
+    <p class="note">One palette for ladies and gentlemen alike.</p>
   </div>
 </section>
 
@@ -234,10 +223,10 @@
 <section class="chapter ch-1" id="ch1">
   <div class="ch__text">
     <span class="ch__no">1</span>
-    <p class="eyebrow">How we met · <span data-edit>Year</span></p>
-    <h2 class="title">Heritage</h2>
+    <p class="eyebrow">24th of May 2021 at GICS Meetup</p>
+    <h2 class="title">How we met</h2>
     <div class="rule"><svg><use href="#crown"/></svg></div>
-    <p data-edit>Tell the story of the first meeting in two or three sentences. Where you were, who introduced you, and what you noticed first.</p>
+    <p>Nervis was a speaker at the GICS Meetup, and during the Q/A session, Joyce threw a question at Nervis, which intrigued him. He followed up about her through her friend, who was the leader of the group, and thereafter the rest is history.</p>
   </div>
   <div class="ch__photos">
     <div class="col"><div class="gi reveal"><button class="g" data-c="traditional" data-i="p06"><img src="img/p06-800.webp" srcset="img/p06-480.webp 480w, img/p06-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1422" loading="lazy" decoding="async" alt="The couple, close portrait"></button><a class="dl" href="downloads/Royalty-2026-p06.jpg" download="Royalty-2026-p06.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><div class="gi reveal"><button class="g" data-c="traditional" data-i="p10"><img src="img/p10-800.webp" srcset="img/p10-480.webp 480w, img/p10-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="533" loading="lazy" decoding="async" alt="The bride seated on the sofa in peach"></button><a class="dl" href="downloads/Royalty-2026-p10.jpg" download="Royalty-2026-p10.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div>
@@ -247,10 +236,10 @@
 <section class="chapter ch-2" id="ch2">
   <div class="ch__text">
     <span class="ch__no">2</span>
-    <p class="eyebrow">The first date · <span data-edit>Year</span></p>
-    <h2 class="title">Noir</h2>
+    <p class="eyebrow">2024</p>
+    <h2 class="title">The first date</h2>
     <div class="rule"><svg><use href="#crown"/></svg></div>
-    <p data-edit>Where you went, what you talked about, what you remember. Keep it short and true to you.</p>
+    <p>We went out to a restaurant to eat and discuss.</p>
   </div>
   <div class="ch__photos">
     <div class="col"><div class="gi reveal"><button class="g" data-c="formal" data-i="p08"><img src="img/p08-800.webp" srcset="img/p08-480.webp 480w, img/p08-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="684" height="912" loading="lazy" decoding="async" alt="The couple smiling together"></button><a class="dl" href="downloads/Royalty-2026-p08.jpg" download="Royalty-2026-p08.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div><div class="gi reveal"><button class="g" data-c="formal" data-i="p05"><img src="img/p05-800.webp" srcset="img/p05-480.webp 480w, img/p05-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="756" height="1008" loading="lazy" decoding="async" alt="The couple with an award"></button><a class="dl" href="downloads/Royalty-2026-p05.jpg" download="Royalty-2026-p05.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div>
@@ -260,10 +249,10 @@
 <section class="chapter ch-3" id="ch3">
   <div class="ch__text">
     <span class="ch__no">3</span>
-    <p class="eyebrow">When we knew · <span data-edit>Year</span></p>
-    <h2 class="title">Velvet</h2>
+    <p class="eyebrow">2024</p>
+    <h2 class="title">When we knew</h2>
     <div class="rule"><svg><use href="#crown"/></svg></div>
-    <p data-edit>The moment it became clear this was forever. What changed, and how you both felt.</p>
+    <p>He officially proposed.</p>
   </div>
   <div class="ch__photos">
     <div class="col"><div class="gi reveal"><button class="g" data-c="royal" data-i="p09"><img src="img/p09-800.webp" srcset="img/p09-480.webp 480w, img/p09-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="720" height="1080" loading="lazy" decoding="async" alt="The couple in peach and white"></button><a class="dl" href="downloads/Royalty-2026-p09.jpg" download="Royalty-2026-p09.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div>
@@ -273,10 +262,10 @@
 <section class="chapter ch-4" id="ch4">
   <div class="ch__text">
     <span class="ch__no">4</span>
-    <p class="eyebrow">The proposal · <span data-edit>Year</span></p>
-    <h2 class="title">Joy</h2>
+    <p class="eyebrow">2024</p>
+    <h2 class="title">The proposal</h2>
     <div class="rule"><svg><use href="#crown"/></svg></div>
-    <p data-edit>How the question was asked, and the answer. Then everything that has been laughter since.</p>
+    <p>He had to come and see her pastors and also present her to his pastors before any further step was taken.</p>
   </div>
   <div class="ch__photos">
     <div class="col"><div class="gi reveal"><button class="g" data-c="casual" data-i="p04"><img src="img/p04-800.webp" srcset="img/p04-480.webp 480w, img/p04-800.webp 800w" sizes="(max-width:760px) 50vw, (max-width:1000px) 33vw, 25vw" width="800" height="1067" loading="lazy" decoding="async" alt="The couple, close and smiling"></button><a class="dl" href="downloads/Royalty-2026-p04.jpg" download="Royalty-2026-p04.jpg" aria-label="Download this photo" title="Download photo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div>
@@ -300,23 +289,44 @@
 </section>
 
 
-<!-- WEDDING PARTY -->
+<!-- ROYAL ENTOURAGE -->
 <section class="section section--ivory" id="party">
   <div class="wrap wrap--wide">
     <header class="head">
       <p class="eyebrow">Standing with us</p>
-      <h2 class="title">The Royal Party</h2>
+      <h2 class="title">The Royal Entourage</h2>
       <div class="rule"><svg><use href="#crown"/></svg></div>
     </header>
-    <div class="party">
-      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Maid of Honor</small></div>
-      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Best Man</small></div>
-      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Bridesmaid</small></div>
-      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Groomsman</small></div>
-      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Bridesmaid</small></div>
-      <div class="member reveal"><div class="mono">R</div><h3 data-edit>Name</h3><small>Groomsman</small></div>
+    <div class="party party--lead">
+      <div class="member reveal"><div class="mono">R</div><h3>Serena Asu Besong Agbor</h3><small>Maid of Honour</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Njita Arnaud</h3><small>Best Man</small></div>
     </div>
-    <p class="note">Swap each monogram for a photo by replacing the <code>.mono</code> block with an <code>&lt;img&gt;</code>.</p>
+    <h3 class="party__sub">Bridesmaids</h3>
+    <div class="party">
+      <div class="member reveal"><div class="mono">R</div><h3>Kemei Nora</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Mbah Shalom</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Mbah Success</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Yembe Diane</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Baya Dian</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Bessem Juliet</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Kendra Patrick</h3><small>Bridesmaid</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Embom Jemima</h3><small>Spray Girl</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Nzota Blessing</h3><small>Spray Girl</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Nzota Precious</h3><small>Spray Girl</small></div>
+    </div>
+    <h3 class="party__sub">Groomsmen</h3>
+    <div class="party">
+      <div class="member reveal"><div class="mono">R</div><h3>Agbor Franklen</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Nju Dima Ako</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Ngosong Clement</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Youmbi Harold</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Mengnemo Johan</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Ngong Kuoh Ngam</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Nsom Alisson</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Nzometia Dirane</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Tangwa Godwil</h3><small>Groomsman</small></div>
+      <div class="member reveal"><div class="mono">R</div><h3>Afopezi Moses</h3><small>Groomsman</small></div>
+    </div>
   </div>
 </section>
 
@@ -332,37 +342,46 @@
     <details class="acc" open>
       <summary>Travel &amp; accommodation</summary>
       <div>
-        <p data-edit><b>Getting there:</b> Add directions, nearest airport or motor park, and the best arrival time.</p>
-        <p data-edit><b>Hotels nearby:</b> List two or three hotels with contact numbers and the wedding code if any.</p>
-        <p data-edit><b>Transport &amp; parking:</b> Shuttle times, taxi advice, parking availability.</p>
+        <p><b>Getting there:</b> look for these landmarks near each venue.</p>
+        <p><b>Civil wedding:</b> Mt. Mary hospital entrance</p>
+        <p><b>Traditional wedding:</b> Bunduma gate / Bunduma tap / Cogeni Bunduma</p>
+        <p><b>Church wedding:</b> HIMS, Mayor Street</p>
+        <p><b>Reception:</b> Checkpoint / Co-Cathedral</p>
       </div>
     </details>
     <details class="acc">
       <summary>Gifts &amp; registry</summary>
       <div>
         <p><em>Your presence is our greatest gift.</em></p>
-        <p>Account details for Mobile Money, Orange Money and bank transfer are in the <a href="#support">gifts section</a> just below.</p>
+        <p>Do you want to give the couple a gift of your choice? A guide from the couple is available: please choose from the <a href="#giftlist">gift list</a> below, so the same gift is not given twice.</p>
+        <p>Account details for Mobile Money and bank transfer are in the <a href="#support">gifts section</a> just below.</p>
+      </div>
+    </details>
+    <details class="acc">
+      <summary>Questions?</summary>
+      <div>
+        <p>Please call or message <a href="tel:+237673672617">+237 673 672 617</a> or <a href="tel:+237671574558">+237 671 574 558</a>.</p>
       </div>
     </details>
     <details class="acc">
       <summary>What time should I arrive?</summary>
-      <div><p data-edit>Please arrive 30 minutes before each ceremony so we can begin on time.</p></div>
+      <div><p>Please arrive 30 minutes before each ceremony so we can begin on time.</p></div>
     </details>
     <details class="acc">
       <summary>Can I bring a guest?</summary>
-      <div><p data-edit>Your invitation lists the seats reserved for you. Please indicate your party size on the RSVP.</p></div>
+      <div><p>Just one.</p></div>
     </details>
     <details class="acc">
       <summary>Are children invited?</summary>
-      <div><p data-edit>Update this answer to match the couple’s decision.</p></div>
+      <div><p>Yes, children are welcome.</p></div>
     </details>
     <details class="acc">
       <summary>Is photography allowed?</summary>
-      <div><p data-edit>Our photographers will capture the day. We ask guests to keep phones away during the ceremonies.</p></div>
+      <div><p>Yes, guests are welcome to take photographs.</p></div>
     </details>
     <details class="acc">
       <summary>Is the invitation transferable?</summary>
-      <div><p data-edit>Invitations are personal. Please contact the couple if your plans change.</p></div>
+      <div><p>No, the invitation is not transferable.</p></div>
     </details>
   </div>
 </section>
@@ -375,36 +394,58 @@
       <h2 class="title">Your presence is our greatest gift</h2>
       <div class="rule"><svg><use href="#crown"/></svg></div>
     </header>
-    <p class="support__lede" data-edit>For those who wish to bless us further, you can send a gift to any of the accounts below. Thank you for your love and your generosity.</p>
+    <p class="support__lede">For those who wish to bless us further, you can send a gift to any of the accounts below. Thank you for your love and your generosity.</p>
     <div class="accts">
       <article class="acct frame reveal">
         <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
         <p class="acct__kind">MTN Mobile Money</p>
         <dl>
-          <div><dt>Account name</dt><dd data-edit>Full name on the account</dd></div>
-          <div><dt>Number</dt><dd data-copy data-edit>+237 6XX XXX XXX</dd></div>
+          <div><dt>Account name</dt><dd>Nervis Tetsop Nzometiah</dd></div>
+          <div><dt>Number</dt><dd data-copy>+237 679 999 763</dd></div>
         </dl>
       </article>
       <article class="acct frame reveal">
         <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
         <p class="acct__kind">Orange Money</p>
         <dl>
-          <div><dt>Account name</dt><dd data-edit>Full name on the account</dd></div>
-          <div><dt>Number</dt><dd data-copy data-edit>+237 6XX XXX XXX</dd></div>
+          <div><dt>Account name</dt><dd>To be provided soon</dd></div>
+          <div><dt>Number</dt><dd>To be provided soon</dd></div>
         </dl>
       </article>
       <article class="acct frame reveal">
         <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
         <p class="acct__kind">Bank transfer</p>
         <dl>
-          <div><dt>Bank</dt><dd data-edit>Bank name</dd></div>
-          <div><dt>Account name</dt><dd data-edit>Full name on the account</dd></div>
-          <div><dt>Account number</dt><dd data-copy data-edit>0000 0000 0000</dd></div>
-          <div><dt>IBAN / SWIFT (international guests)</dt><dd data-copy data-edit>Optional</dd></div>
+          <div><dt>Bank</dt><dd>United Bank for Africa (UBA)</dd></div>
+          <div><dt>Account name</dt><dd>Nzometiah Nervis Tetsop</dd></div>
+          <div><dt>Account number</dt><dd data-copy>06009004714</dd></div>
+          <div><dt>IBAN (international guests)</dt><dd data-copy>CM21 10033-05206-06009004714-77</dd></div>
         </dl>
       </article>
     </div>
-    <p class="support__note" data-edit>Please add your name as the reference so we can thank you personally. Only send gifts to the accounts shown on this page.</p>
+    <div class="giftlist reveal" id="giftlist">
+      <h3>The couple's gift list</h3>
+      <p>Choose one item and tell us, so the same gift is not given twice.</p>
+      <ul>
+        <li><span>Washing machine (10 kg)</span><a href="#" data-gift="Washing machine (10 kg)">I will give this</a></li>
+        <li><span>Deep freezer</span><a href="#" data-gift="Deep freezer">I will give this</a></li>
+        <li><span>Juicer</span><a href="#" data-gift="Juicer">I will give this</a></li>
+        <li><span>An LG, Toshiba or Samsung smart TV (55 to 65 inches)</span><a href="#" data-gift="An LG, Toshiba or Samsung smart TV (55 to 65 inches)">I will give this</a></li>
+        <li><span>A multifunctional food processor (e.g. Buchymix multi processor)</span><a href="#" data-gift="A multifunctional food processor (e.g. Buchymix multi processor)">I will give this</a></li>
+        <li><span>A microwave oven</span><a href="#" data-gift="A microwave oven">I will give this</a></li>
+        <li><span>A dining set</span><a href="#" data-gift="A dining set">I will give this</a></li>
+        <li><span>Pressure pot</span><a href="#" data-gift="Pressure pot">I will give this</a></li>
+        <li><span>Customised hoodies</span><a href="#" data-gift="Customised hoodies">I will give this</a></li>
+        <li><span>A cookware set</span><a href="#" data-gift="A cookware set">I will give this</a></li>
+        <li><span>Air fryer</span><a href="#" data-gift="Air fryer">I will give this</a></li>
+        <li><span>A blender</span><a href="#" data-gift="A blender">I will give this</a></li>
+        <li><span>A kitchen spice storage rack (spice storage containers)</span><a href="#" data-gift="A kitchen spice storage rack (spice storage containers)">I will give this</a></li>
+        <li><span>A stand mixer</span><a href="#" data-gift="A stand mixer">I will give this</a></li>
+        <li><span>A water dispenser</span><a href="#" data-gift="A water dispenser">I will give this</a></li>
+        <li><span>Vacuum cleaner</span><a href="#" data-gift="Vacuum cleaner">I will give this</a></li>
+      </ul>
+    </div>
+    <p class="support__note">Please add your name as the reference so we can thank you personally. Only send gifts to the accounts shown on this page.</p>
   </div>
 </section>
 
@@ -412,14 +453,19 @@
 <section class="section section--ivory" id="rsvp">
   <div class="wrap rsvp-split">
     <figure class="rsvp__photo reveal">
-      <div class="arch arch--frame"><img src="img/p09-1200.webp" srcset="img/p09-800.webp 800w, img/p09-1200.webp 1200w" sizes="(max-width:900px) 80vw, 40vw" width="720" height="1080" loading="lazy" alt="The couple in peach and white"></div>
+      <div class="rsvp__frame frame">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <img src="img/p09-1200.webp" srcset="img/p09-800.webp 800w, img/p09-1200.webp 1200w" sizes="(max-width:900px) 80vw, 40vw" width="720" height="1080" loading="lazy" alt="The couple in peach and white">
+      </div>
     </figure>
     <div class="rsvp frame">
       <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
       <img class="rsvp__icon" src="img/logo-icon-teal.webp" alt="" width="54">
       <p class="eyebrow">Reply by <span data-bind="rsvpBy">the date on your invitation</span></p>
       <h2 class="title">Will you join us?</h2>
-      <form class="form" id="rsvpForm" novalidate>
+      <form class="form" id="rsvpForm" name="rsvp" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="rsvp">
+        <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <label>Full name<input name="name" required autocomplete="name"></label>
         <label>Phone or email<input name="contact" required autocomplete="email"></label>
         <fieldset>
@@ -427,13 +473,7 @@
           <label class="radio"><input type="radio" name="attending" value="Yes, with pleasure" checked><span>Yes, with pleasure</span></label>
           <label class="radio"><input type="radio" name="attending" value="Regretfully, no"><span>Regretfully, no</span></label>
         </fieldset>
-        <div class="row">
-          <label>Number of guests<input type="number" name="guests" min="1" max="10" value="1"></label>
-          <label>Meal preference
-            <select name="meal"><option>No preference</option><option>Chicken</option><option>Fish</option><option>Beef</option><option>Vegetarian</option></select>
-          </label>
-        </div>
-        <label>A blessing for the couple<textarea name="message" rows="4" placeholder="Leave a message for the happy couple"></textarea></label>
+                <label>A blessing for the couple<textarea name="message" rows="4" placeholder="Leave a message for the happy couple"></textarea></label>
         <button class="btn" type="submit">Send RSVP</button>
         <p class="form__status" id="rsvpStatus" role="status"></p>
       </form>
@@ -467,6 +507,9 @@
   <p>Royalty 2026 · Brand identity &amp; website by Chimban Rodrick</p>
 </footer>
 
+<audio id="bgm" src="audio/god-made-you-for-me.mp3" loop preload="none"></audio>
+<button class="music" id="musicBtn" title="God Made You For Me" type="button" aria-label="Play music" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="17.5" cy="16" r="2.5" fill="currentColor"/></svg></button>
+
 <div class="lb" id="lb" hidden>
   <button class="lb__x" aria-label="Close">×</button>
   <a class="lb__dl btn btn--gold btn--small" id="lbDl" href="#" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Download</a>
@@ -475,6 +518,6 @@
   <button class="lb__n" aria-label="Next">›</button>
 </div>
 
-<script src="script.js?v=36"></script>
+<script src="script.js?v=38"></script>
 </body>
 </html>

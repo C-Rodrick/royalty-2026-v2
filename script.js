@@ -13,7 +13,7 @@ const CONFIG = {
   mediaBase: 'https://pub-d11b5bf2bc21485baa1db76585b4858d.r2.dev',                        // where the song, HD photos and ZIP are served from, e.g. 'https://media.royalty2026.com' (empty = this site)
   musicSrc: 'audio/god-made-you-for-me.mp3', // background music, starts only when a guest taps the music button (leave empty to hide the button)
   netlifyForms: true,                   // RSVPs are collected by Netlify Forms (set the email notification in the Netlify dashboard)
-  formEndpoint: '',                     // optional: a Formspree URL, e.g. 'https://formspree.io/f/xxxxxxx'
+  formEndpoint: 'https://script.google.com/macros/s/AKfycbzmbXi90ok2CP2RngkNGkavS81rZnWmAvYXgL5tEPrfw_wDG74eKLmVzXGUqtgm_kvb2Q/exec',                     // Google Sheet: the Apps Script web app URL (.../exec); RSVPs are added as a row (see Royalty-2026-RSVP-Sheet.gs)
   maps: {                               // Google Maps links (search links; replace with exact pins if you like)
     civil: 'https://maps.app.goo.gl/LkFFyQPdQ3zPioJg6',
     traditional: 'https://maps.app.goo.gl/w6NHTaJ5eSJp7W6p8',
@@ -160,17 +160,15 @@ $('#rsvpForm').addEventListener('submit', async e => {
   const text = `Royalty 2026 RSVP\nName: ${d.name}\nContact: ${d.contact}\nAttending: ${d.attending}\nMessage: ${d.message || '-'}`;
   const thanks = tr('Thank you for being part of our Royalty. ');
   const done = () => { st.textContent = thanks; st.insertAdjacentHTML('beforeend', '<svg class="inl-crown" viewBox="0 0 208 123" aria-hidden="true"><use href="#crown"/></svg>'); };
-  if (CONFIG.netlifyForms && location.protocol !== 'file:') {
-    try {
-      const r = await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(f)).toString() });
-      if (!r.ok) throw 0; done(); f.reset(); return;
-    } catch { st.textContent = tr('Something went wrong. Please try again or message us on WhatsApp.'); st.classList.add('err'); }
-  }
-  if (CONFIG.formEndpoint) {
-    try {
-      const r = await fetch(CONFIG.formEndpoint, { method: 'POST', headers: { Accept: 'application/json', 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
-      if (!r.ok) throw 0; done(); f.reset(); return;
-    } catch { st.textContent = tr('Something went wrong. Please try again or message us on WhatsApp.'); st.classList.add('err'); }
+  /* send to the Google Sheet and to Netlify Forms (email notification) at the same time; one success is enough */
+  const sends = [];
+  if (CONFIG.formEndpoint) sends.push(fetch(CONFIG.formEndpoint, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ ...d, lang: LANG }) })
+    .then(r => r.ok ? r.json().then(x => x.ok !== false, () => true) : false));
+  if (CONFIG.netlifyForms && location.protocol !== 'file:') sends.push(fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(f)).toString() }).then(r => r.ok));
+  if (sends.length) {
+    const res = await Promise.all(sends.map(p => p.catch(() => false)));
+    if (res.some(Boolean)) { done(); f.reset(); return; }
+    st.textContent = tr('Something went wrong. Please try again or message us on WhatsApp.'); st.classList.add('err');
   }
   if (CONFIG.whatsapp) { open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`, '_blank', 'noopener'); done(); }
   else if (!CONFIG.formEndpoint) { st.textContent = 'RSVP delivery is not set up yet. Add a WhatsApp number or form link in script.js.'; st.classList.add('err'); }

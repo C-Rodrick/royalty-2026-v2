@@ -606,3 +606,12 @@ html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:ce
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @keyframes gateShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
 @media (prefers-reduced-motion:reduce){.gate__inner.shake{animation:none}}
+
+/* passcode eye button */
+.gate__field{position:relative}
+.gate__field input{padding-right:52px;padding-left:52px}
+.gate__eye{position:absolute;right:4px;top:50%;transform:translateY(-50%);width:44px;height:44px;display:grid;place-items:center;background:none;border:0;color:#0b2c2c;cursor:pointer;opacity:.75;transition:opacity .2s}
+.gate__eye:hover,.gate__eye:focus-visible{opacity:1}
+.gate__eye svg{width:22px;height:22px}
+.gate__eye .slash{display:none}
+.gate__eye.on .slash{display:block}

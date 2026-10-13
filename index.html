@@ -10,12 +10,16 @@
 <meta name="theme-color" content="#0d3434">
 <meta property="og:title" content="Royalty 2026">
 <meta property="og:description" content="Two lives. One union. A legacy beginning. You are invited.">
-<meta property="og:image" content="img/og.jpg">
+<!-- link preview while the site is private: the emblem. At launch switch this back to img/og.jpg (the couple photo) -->
+<meta property="og:image" content="https://royalty2026.com/img/og-private.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://royalty2026.com/">
 <link rel="icon" href="favicon.png">
 <link rel="preload" href="fonts/Amador-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" as="image" href="img/p04-800.webp" imagesrcset="img/p04-480.webp 480w, img/p04-800.webp 800w, img/p04-1200.webp 1200w" imagesizes="(max-width:860px) 78vw, 460px">
 <link rel="preload" as="image" href="img/logo-word-gold.webp">
-<link rel="stylesheet" href="style.css?v=46">
+<link rel="stylesheet" href="style.css?v=47">
 </head>
 <body>
 
@@ -26,7 +30,7 @@
     <p class="eyebrow">Private invitation</p>
     <h1 class="gate__title" id="gateTitle"><img src="img/logo-word-gold.webp" alt="Royalty 2026" width="260" height="116"></h1>
     <p class="gate__hint">Enter the passcode from your invitation to continue.</p>
-    <label class="gate__field"><span class="sr">Passcode</span><input type="password" id="gateInput" name="passcode" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Passcode" required></label>
+    <div class="gate__field"><label class="sr" for="gateInput">Passcode</label><input type="password" id="gateInput" name="passcode" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Passcode" required><button type="button" class="gate__eye" id="gateEye" aria-label="Show passcode" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path class="slash" d="M4 4l16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></div>
     <p class="gate__msg" id="gateMsg" role="alert"></p>
     <button type="submit" class="btn btn--gold">Open</button>
   </form>
@@ -552,6 +556,6 @@
   <button class="lb__n" aria-label="Next">›</button>
 </div>
 
-<script src="script.js?v=44"></script>
+<script src="script.js?v=45"></script>
 </body>
 </html>

@@ -585,3 +585,24 @@ code{font-size:.9em}
 .welcome__skip:hover{opacity:1}
 @keyframes welcomeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @media (prefers-reduced-motion:reduce){.welcome__emblem{animation:none}.welcome{transition:none}}
+
+/* ---- passcode gate: the page stays hidden until the guest enters the invitation passcode ---- */
+.gate{display:none}
+html.locked{overflow:hidden}
+html.locked body>*:not(.gate){display:none!important}
+html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:24px;text-align:center;color:var(--ivory);background:radial-gradient(ellipse at 50% 30%,#134646 0%,#0b2c2c 55%,#061f1f 100%);overflow:auto}
+.gate__inner{width:min(420px,100%)}
+.gate__emblem{width:150px;height:auto;aspect-ratio:738/846;margin:0 auto 22px;display:block}
+.gate .eyebrow{color:var(--gold)}
+.gate__names{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,9vw,3.8rem);line-height:1.05;margin:8px 0 14px;color:var(--gold-hi)}
+.gate__names i{font-style:normal;color:var(--gold);margin:0 .25em}
+.gate__hint{opacity:.85;margin-bottom:22px}
+.gate__field{display:block}
+.gate__field input{width:100%;padding:14px 16px;text-align:center;font-family:var(--body);font-size:1.05rem;letter-spacing:.12em;color:var(--ink);background:#f4ebdd;border:1px solid var(--gold);border-radius:0}
+.gate__field input:focus{outline:2px solid var(--gold-hi);outline-offset:2px}
+.gate__msg{min-height:1.6em;margin:10px 0 14px;font-size:.92rem;color:#f2c9a8}
+.gate__lang{position:absolute;top:16px;right:16px;padding:7px 12px;border:1px solid rgba(207,182,128,.55);border-radius:999px;background:transparent;color:var(--ivory);font-family:var(--body);font-size:.74rem;letter-spacing:.2em;cursor:pointer}
+.gate__inner.shake{animation:gateShake .4s}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@keyframes gateShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+@media (prefers-reduced-motion:reduce){.gate__inner.shake{animation:none}}

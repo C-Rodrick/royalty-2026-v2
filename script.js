@@ -46,7 +46,9 @@ $$('[data-bind]').forEach(el => {
   const v = k === 'dateLong' ? (CONFIG.dateLabel || dateLong) : CONFIG[k];
   if (v) el.textContent = v;
 });
-document.title = `${CONFIG.bride} & ${CONFIG.groom} · Royalty 2026`;
+/* the tab title shows the names only once the site is unlocked */
+const setTitle = () => { document.title = document.documentElement.classList.contains('locked') ? 'Royalty 2026' : `${CONFIG.bride} & ${CONFIG.groom} · Royalty 2026`; };
+setTitle();
 
 /* passcode gate: only a scrambled (SHA-256) form of the passcode is stored; the guest's choice is remembered on their device */
 function sha256(ascii) {
@@ -99,6 +101,7 @@ function sha256(ascii) {
     if (sha256('royalty2026:' + code) === G.hash) {
       try { localStorage.setItem(G.key, G.hash); } catch (x) {}
       root.classList.remove('locked');
+      setTitle();
       window.scrollTo(0, 0);
       dispatchEvent(new Event('royalty:unlocked'));
     } else {
@@ -416,7 +419,7 @@ $('#addCal').addEventListener('click', () => {
       el.setAttribute(a, LANG === 'fr' && FR[o] ? FR[o] : o);
     }));
     document.documentElement.lang = LANG;
-    document.title = LANG === 'fr' ? `${CONFIG.bride} & ${CONFIG.groom} \u00b7 Royalty 2026` : `${CONFIG.bride} & ${CONFIG.groom} \u00b7 Royalty 2026`;
+    setTitle();
     const lb = $('#langBtn');
     if (lb) { lb.classList.toggle('fr', LANG === 'fr'); lb.setAttribute('aria-pressed', LANG === 'fr'); }
     const m = $('#musicBtn'); if (m && m._sync) m._sync();

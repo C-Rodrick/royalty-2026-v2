@@ -277,12 +277,26 @@ $('#rsvpForm').addEventListener('submit', async e => {
   if (!b || !au) return;
   if (!CONFIG.musicSrc) { b.hidden = true; return; }
   const sync = () => { const on = !au.paused; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', tr(on ? 'Stop music' : 'Play music')); };
-  b.addEventListener('click', () => {
-    if (au.paused) { au.volume = .6; const p = au.play(); if (p && p.catch) p.catch(() => {}); } else au.pause();
+  let stopped = false;                         // the guest switched it off: never restart it
+  const start = () => { au.volume = .6; const p = au.play(); return p && p.then ? p.then(() => true, () => false) : Promise.resolve(!au.paused); };
+  b.addEventListener('click', e => {
+    e.stopPropagation();
+    if (au.paused) { stopped = false; start(); } else { stopped = true; au.pause(); }
     sync();
   });
   au.addEventListener('play', sync); au.addEventListener('pause', sync);
   b._sync = sync; sync();
+  /* autoplay: browsers only allow sound after the guest's first tap, click or key press,
+     so try straight away and, if blocked, start on that first interaction */
+  start().then(ok => {
+    if (ok) return;
+    const evs = ['pointerdown', 'touchend', 'click', 'keydown'];
+    const go = e => {
+      if (stopped || e.target.closest('#musicBtn')) return;
+      start().then(done => { if (done) evs.forEach(n => removeEventListener(n, go, true)); });
+    };
+    evs.forEach(n => addEventListener(n, go, true));
+  });
 })();
 
 

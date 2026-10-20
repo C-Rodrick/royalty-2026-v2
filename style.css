@@ -615,3 +615,7 @@ html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:ce
 .gate__eye svg{width:22px;height:22px}
 .gate__eye .slash{display:none}
 .gate__eye.on .slash{display:block}
+
+/* note under the gift list */
+.giftlist .giftlist__note{max-width:60ch;margin:0 auto 24px;padding:14px 18px;font-style:italic;font-size:.98rem;line-height:1.6;color:var(--gold-hi);border:1px solid rgba(207,182,128,.4);background:rgba(207,182,128,.08)}
+.giftlist .giftlist__note b{font-style:normal;letter-spacing:.06em}

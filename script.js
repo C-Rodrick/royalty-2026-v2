@@ -131,7 +131,7 @@ toggle.addEventListener('click', e => { e.stopPropagation(); setMenu(!links.clas
 links.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
 document.addEventListener('click', e => { if (links.classList.contains('open') && !e.target.closest('#navLinks, #navToggle')) setMenu(false); });
 addEventListener('keydown', e => { if (e.key === 'Escape' && links.classList.contains('open')) setMenu(false); });
-addEventListener('resize', () => { if (innerWidth > 760 && links.classList.contains('open')) setMenu(false); });
+addEventListener('resize', () => { if (innerWidth > 980 && links.classList.contains('open')) setMenu(false); });
 
 /* countdown */
 const pad = n => String(n).padStart(2, '0');

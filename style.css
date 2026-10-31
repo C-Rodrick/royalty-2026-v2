@@ -651,3 +651,7 @@ html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:ce
 /* dress code: the wedding colours sit in one wide card under the civil and traditional notes */
 .dress__colors{grid-column:1/-1}
 .dress__colors .swatches{gap:clamp(16px,3vw,34px)}
+
+/* "The wedding of" sits centred directly under the Royalty 2026 wordmark, on every screen size */
+.hero__text .eyebrow{display:block;box-sizing:border-box;width:min(380px,70vw);text-align:center;white-space:nowrap;font-size:clamp(.66rem,2.6vw,.82rem);letter-spacing:.38em;padding-left:.38em}
+@media (max-width:860px){.hero__text .eyebrow{margin-left:auto;margin-right:auto}}

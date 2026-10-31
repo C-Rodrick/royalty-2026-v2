@@ -655,3 +655,10 @@ html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:ce
 /* "The wedding of" sits centred directly under the Royalty 2026 wordmark, on every screen size */
 .hero__text .eyebrow{display:block;box-sizing:border-box;width:min(380px,70vw);text-align:center;white-space:nowrap;font-size:clamp(.66rem,2.6vw,.82rem);letter-spacing:.38em;padding-left:.38em}
 @media (max-width:860px){.hero__text .eyebrow{margin-left:auto;margin-right:auto}}
+
+/* on tablets and phones the RSVP photo spans the same width as the form card below it, so both share the same side margins */
+@media (max-width:900px){
+  .rsvp__photo{width:100%;max-width:none;margin:0}
+  .rsvp__frame{aspect-ratio:4/5}
+  .rsvp__frame img{object-position:center 18%}
+}

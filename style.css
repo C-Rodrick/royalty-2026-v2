@@ -662,3 +662,11 @@ html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:ce
   .rsvp__frame{aspect-ratio:4/5}
   .rsvp__frame img{object-position:center 18%}
 }
+
+/* photo sections: captions under the journey photos, and section colours (Crimson on warm brown, Noir on deep teal) */
+.chapter .gi__ph{position:relative}
+.chapter .gi--cap .cap{display:grid;gap:2px;margin:10px 2px 0;text-align:left;line-height:1.45}
+.chapter .gi--cap time{font-family:var(--body);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-lo)}
+.chapter .gi--cap span{font-size:.98rem;font-style:italic;color:var(--ink)}
+.ch-2{background:#3a2415;color:var(--ivory)}
+.ch-3{background:var(--ink);color:var(--ivory)}

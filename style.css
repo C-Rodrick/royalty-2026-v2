@@ -670,3 +670,7 @@ html.locked .gate{position:fixed;inset:0;z-index:200;display:grid;place-items:ce
 .chapter .gi--cap span{font-size:.98rem;font-style:italic;color:var(--ink)}
 .ch-2{background:#3a2415;color:var(--ivory)}
 .ch-3{background:var(--ink);color:var(--ivory)}
+
+/* the photo behind the quote band and the closing section is the hero photo; keep both faces in view */
+.band{background-position:center calc(24% + var(--py,0px))}
+.closing__bg{background-position:center 24%}

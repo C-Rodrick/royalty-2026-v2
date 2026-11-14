@@ -19,7 +19,7 @@
 <link rel="preload" href="fonts/Amador-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preload" as="image" href="img/p13-800.webp" imagesrcset="img/p13-480.webp 480w, img/p13-800.webp 800w, img/p13-1200.webp 1200w" imagesizes="(max-width:860px) 78vw, 460px">
 <link rel="preload" as="image" href="img/logo-word-gold.webp">
-<link rel="stylesheet" href="style.css?v=59">
+<link rel="stylesheet" href="style.css?v=61">
 </head>
 <body>
 
@@ -83,6 +83,7 @@
       <p class="hero__until" id="cdNote">Until we become one</p>
       <div class="hero__cta">
         <a href="#wedding" class="btn btn--gold">Explore the wedding</a>
+        <a href="#film" class="btn btn--ghost">Watch our film</a>
         <a href="#rsvp" class="btn btn--ghost">RSVP</a>
       </div>
     </div>
@@ -137,6 +138,29 @@
       <li class="reveal"><time>2024</time><h3>The proposal</h3><p>He came to see her pastors and presented her to his own before any further step was taken.</p></li>
       <li class="reveal"><time>2026</time><h3>Royalty 2026</h3><p>Two stories become one. Join us as we begin our legacy.</p></li>
     </ol>
+  </div>
+</section>
+
+<!-- FILM -->
+<section class="section section--teal pattern film" id="film">
+  <div class="wrap">
+    <header class="head">
+      <p class="eyebrow">A film for you</p>
+      <h2 class="title">Our Story, in film</h2>
+      <div class="rule"><svg><use href="#crown"/></svg></div>
+    </header>
+    <div class="film__player reveal">
+      <div class="film__frame frame">
+        <svg class="c c1"><use href="#corner"/></svg><svg class="c c2"><use href="#corner"/></svg><svg class="c c3"><use href="#corner"/></svg><svg class="c c4"><use href="#corner"/></svg>
+        <video id="filmVideo" class="film__video" preload="none" playsinline poster="img/film-poster-1280.webp" width="1280" height="720" aria-label="Our Story, in film"></video>
+        <button class="film__play" id="filmPlay" type="button" aria-label="Play the film"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></button>
+      </div>
+      <div class="film__actions">
+        <a class="btn btn--gold" href="video/Royalty-2026-Film-1080p.mp4" download="Royalty-2026-Film.mp4" data-film-dl><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Download the film (HD)</a>
+        <a class="btn btn--ghost" href="#" id="filmShare" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.9 7L4 20l1.1-4A8 8 0 1 1 20 12Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 2.5 6 6 6l1-1.5-2-1-.8.8c-.9-.4-1.7-1.2-2.1-2.1l.8-.8-1-2z" fill="currentColor"/></svg> Share on WhatsApp</a>
+      </div>
+      <p class="film__note">1 min 44 s · HD download about 32 MB</p>
+    </div>
   </div>
 </section>
 
@@ -284,6 +308,7 @@
     </header>
     <div class="dlall">
       <a class="btn btn--gold" href="downloads/Royalty-2026-Photos-HD.zip" download="Royalty-2026-Photos-HD.zip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Download all photos in HD (ZIP)</a>
+      <a class="btn btn--ghost" href="video/Royalty-2026-Film-1080p.mp4" download="Royalty-2026-Film.mp4" data-film-dl><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Download the film (HD, MP4)</a>
       <p>16 photographs · about 5 MB · HD, full size · or tap the arrow on any photo to save it on its own</p>
     </div>
   </div>
@@ -492,6 +517,14 @@
           <label class="radio"><input type="radio" name="attending" value="Yes, with pleasure" checked><span>Yes, with pleasure</span></label>
           <label class="radio"><input type="radio" name="attending" value="Regretfully, no"><span>Regretfully, no</span></label>
         </fieldset>
+        <fieldset class="events-pick" id="eventsPick">
+          <legend>Which celebrations will you attend?</legend>
+          <label class="radio"><input type="checkbox" name="events" value="Civil wedding"><span>Civil wedding <small>Thursday 3 December · 9:00 am</small></span></label>
+          <label class="radio"><input type="checkbox" name="events" value="Traditional wedding"><span>Traditional wedding <small>Thursday 3 December · 5:00 pm</small></span></label>
+          <label class="radio"><input type="checkbox" name="events" value="Church wedding"><span>Church wedding <small>Saturday 5 December · 11:00 am</small></span></label>
+          <label class="radio"><input type="checkbox" name="events" value="Reception"><span>Reception <small>Saturday 5 December · 5:00 pm</small></span></label>
+          <p class="events-pick__all"><button type="button" id="eventsAll">Select all four</button></p>
+        </fieldset>
                 <label>A blessing for the couple<textarea name="message" rows="4" placeholder="Leave a message for the happy couple"></textarea></label>
         <button class="btn" type="submit">Send RSVP</button>
         <p class="form__status" id="rsvpStatus" role="status"></p>
@@ -517,6 +550,7 @@
     <p class="closing__lines">Two lives. Two stories.<br>One love. One forever.</p>
     <p class="hero__date" data-bind="dateLong"></p>
     <a href="#rsvp" class="btn btn--gold">RSVP now</a>
+    <a href="#film" class="closing__film">Watch our film</a>
   </div>
 </section>
 </main>
@@ -556,6 +590,6 @@
   <button class="lb__n" aria-label="Next">›</button>
 </div>
 
-<script src="script.js?v=55"></script>
+<script src="script.js?v=58"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ const CONFIG = {
   netlifyForms: true,                   // RSVPs are collected by Netlify Forms (set the email notification in the Netlify dashboard)
   formEndpoint: [                       // Google Sheets: Apps Script web app URLs (.../exec). Every RSVP is sent to ALL of them
     'https://script.google.com/macros/s/AKfycbzmbXi90ok2CP2RngkNGkavS81rZnWmAvYXgL5tEPrfw_wDG74eKLmVzXGUqtgm_kvb2Q/exec',   // sheet 1
-    'https://script.google.com/macros/s/AKfycbzl9jkkyRTfHX7j0_P7p36KD9ZJNBYJKuk8sLeMOPjw41UKDLmR2UYC7YDSb5b91DzEJA/exec'    // team account sheet (royalty2026.team@gmail.com)
+    'https://script.google.com/macros/s/AKfycbzJ_Qa_GFm9dD4HC7GLaOdJ0FbPsiz4NCAQGYKaUXrr9hj0-C0_Ae1-c_Y4wmKETZOc/exec'    // team account sheet (royalty2026.team@gmail.com)
   ],
   maps: {                               // Google Maps links (search links; replace with exact pins if you like)
     civil: 'https://maps.app.goo.gl/LkFFyQPdQ3zPioJg6',
